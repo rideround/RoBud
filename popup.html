@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+  "name": "RoBud - Roblox Trade Helper",
+  "version": "1.1.0",
+  "description": "Adds an 'Analyze Trade' button to Roblox trade details on the trades page.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "scripting"
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "RoBud - Roblox Trade Helper",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png"
+    }
+  },
+  "host_permissions": [
+    "https://ropal-production.up.railway.app/*",
+    "https://users.roblox.com/*",
+    "https://www.roblox.com/*",
+    "https://economy.roblox.com/*",
+    "https://auth.roblox.com/*",
+    "https://*.roblox.com/*",
+    "https://www.rolimons.com/*",
+    "https://api.rolimons.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.roblox.com/*",
+        "https://*.roblox.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
