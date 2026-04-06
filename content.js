@@ -2,7 +2,7 @@
   const ANALYZE_BUTTON_CLASS = "roblox-analyze-trade-button";
   const ANALYZE_MODAL_ID = "roblox-analyze-trade-modal";
   const STYLE_ID = "roblox-analyze-trade-styles";
-  const DEFAULT_SERVER_URL = "https://ropal-production.up.railway.app";
+  const DEFAULT_SERVER_URL = "****";
   const SERVER_URL_KEY = "rpal_server_url";
   const CLIENT_ID_KEY = "rpal_client_id";
   const DISCORD_INVITE_URL = "https://discord.gg/robud";
