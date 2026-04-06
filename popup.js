@@ -1,5 +1,5 @@
 (function () {
-  const DEFAULT_SERVER_URL = "https://ropal-production.up.railway.app";
+  const DEFAULT_SERVER_URL = "***";
   const SERVER_URL_KEY = "rpal_server_url";
   const CLIENT_ID_KEY = "rpal_client_id";
   const ROBLOX_USER_KEY = "rpal_roblox_user";
